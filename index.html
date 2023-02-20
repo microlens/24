@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Plyr Starter - A simple HTML5 media player
+  </title>
+  <meta name="description" property="og:description"
+    content="A simple, accessible and customisable media player." />
+  <meta name="author" content="AREA44" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Icons -->
+  <link rel="icon" href="static/images/favicon.ico" />
+  <link rel="icon" type="image/png" href="static/images/32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="static/images/16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/180x180.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Plyr Starter - A simple HTML5 media player" />
+  <meta property="og:site_name" content="Plyr Starter" />
+  <meta property="og:url" content="https://area44.github.io/plyr-starter" />
+  <meta property="og:image" content="static/images/1200x630.png" />
+
+  <!-- Docs styles -->
+  <link rel="stylesheet" href="static/plyr/plyr.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preload -->
+  <link rel="preload" as="font" crossorigin type="font/woff2"
+    href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+  <link rel="preload" as="font" crossorigin type="font/woff2"
+    href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+</head>
+
+<body>
+  <div class="grid">
+    <header>
+      <h1>Pl<span>a</span>y<span>e</span>r</h1>
+      <h1>Starter</h1>
+      <p>A simple, accessible and customisable media player</p>
+    </header>
+    <main>
+      <div id="container">
+        <video controls playsinline data-poster="media/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+          <!-- Video files -->
+          <source src="media/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576" />
+
+          <!-- Caption files -->
+          <track kind="captions" label="English" srclang="en" src="media/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+            default />
+          <track kind="captions" label="Français" srclang="fr" src="media/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
+        </video>
+      </div>
+      <div>
+        <svg class="icon">
+          <title>HTML5</title>
+          <path
+            d="M14.738.326C14.548.118 14.28 0 14 0H2c-.28 0-.55.118-.738.326S.98.81 1.004 1.09l1 11c.03.317.208.603.48.767l5 3c.16.095.338.143.516.143s.356-.048.515-.143l5-3c.273-.164.452-.45.48-.767l1-11c.026-.28-.067-.557-.257-.764zM12 4H6v2h6v5.72l-4 1.334-4-1.333V9h2v1.28l2 .666 2-.667V8H4V2h8v2z">
+          </path>
+        </svg>
+        <a href="https://itunes.apple.com/au/movie/view-from-a-blue-moon/id1041586323" target="_blank">Watching Rain On
+          The Road In Worm's Eye View
+        </a>
+        &copy; Brainfarm
+      </div>
+    </main>
+  </div>
+
+  <aside>
+    <p>
+      made by <a href="https://github.com/AREA44/plyr-starter/" target="_blank">AREA44</a> & <a href="https://plyr.io"
+        target="_blank">Plyr</a>
+    </p>
+  </aside>
+
+  <script src="static/plyr/plyr.js"></script>
+  <script>
+    const player = new Plyr("#player");
+  </script>
+</body>
+
+</html>
