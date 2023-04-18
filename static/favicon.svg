@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 1000 1000">
+	<g transform="matrix(1 0 0 1 500 500)">
+		<g transform="matrix(22.045 0 0 22.045 -212.3276 0.0254)">
+			<path fill="#000" transform="translate(-12, -11.5)" d="M1 21h22L12 2"/>
+		</g>
+		<g transform="matrix(20.9725 0 0 20.9725 245.0971 -0.0002)">
+			<path fill="#000" transform="translate(-12, -12)" d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"/>
+		</g>
+	</g>
+</svg>
